@@ -1,0 +1,158 @@
+/* TradingBots.css */
+
+.trading-bots-container {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    top: 90px;
+  }
+  
+  .top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-button.active-normal {
+    background-color: #8d6e31;
+    color: white;
+  }
+  
+  .tab-button.active-popular {
+    background-color: #f5a623;
+    color: black;
+  }
+  
+  .tab-button:not(.active-normal):not(.active-popular) {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .user-icon {
+    font-size: 16px;
+  }
+  
+  .user-text {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .bots-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 60px;
+  }
+  
+  .bot-card {
+    background-color: #f5a623;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .bot-card:hover {
+    background-color: #e09620;
+  }
+  
+  .bot-name {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .disclaimer-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffd54f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .warning-icon {
+    font-size: 14px;
+  }
+  
+  .disclaimer-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .windows-notice {
+    text-align: right;
+    color: #888;
+  }
+  
+  .windows-text {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .windows-subtext {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .bots-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bots-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .top-section {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

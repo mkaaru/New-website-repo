@@ -1,0 +1,270 @@
+/* CopyTradingTokens.css */
+
+.copy-trading-container {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    top: 140px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+    color: #000;
+  }
+  
+  .developer-text {
+    color: #00acc1;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .token-panel {
+    background-color: #e6e6e6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .token-input-section {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  
+  .token-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .add-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .plus-icon {
+    color: #f05a28;
+    font-size: 24px;
+    line-height: 1;
+  }
+  
+  .controls-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .toggle-control {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .toggle-button {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .toggle-active {
+    background-color: #2196f3;
+  }
+  
+  .toggle-circle {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s;
+  }
+  
+  .toggle-active .toggle-circle {
+    transform: translateX(20px);
+  }
+  
+  .toggle-label {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+  
+  .sync-button {
+    background-color: #ededed;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .create-token-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 180px;
+    cursor: pointer;
+  }
+  
+  .edit-tokens-button {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pencil-icon {
+    margin-right: 5px;
+  }
+  
+  .info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .info-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2196f3;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .video-text {
+    color: #2196f3;
+    font-size: 14px;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .disclaimer-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .warning-icon {
+    margin-right: 5px;
+  }
+  
+  .disclaimer-text {
+    font-size: 14px;
+  }
+  
+  .windows-section {
+    text-align: right;
+    color: #888;
+  }
+  
+  .windows-text {
+    font-size: 14px;
+  }
+  
+  .windows-subtext {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    .copy-trading-container {
+      padding: 10px;
+    }
+  
+    .token-panel {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .token-input-section {
+      flex-direction: column;
+    }
+  
+    .add-button {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .controls-section {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .action-buttons {
+      width: 100%;
+    }
+  
+    .create-token-button,
+    .edit-tokens-button {
+      width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  
+    .windows-section {
+      text-align: center;
+    }
+  }
+  
